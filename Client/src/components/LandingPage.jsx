@@ -25,7 +25,7 @@ const LandingPage = () => {
         <div className=" flex justify-center mt-6">
           <Link to={"/login"}>
             {" "}
-            <button className=" bg-black text-white px-5 py-3 rounded-xl text-lg hover:bg-slate-600">
+            <button className=" bg-zinc-600 text-white px-5 py-3 rounded-3xl text-lg hover:bg-slate-600">
               Get Started
             </button>
           </Link>

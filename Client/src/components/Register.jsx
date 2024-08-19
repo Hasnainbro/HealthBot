@@ -8,7 +8,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
-  const URL = "";
+  const URL = "http://localhost:8000/register";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

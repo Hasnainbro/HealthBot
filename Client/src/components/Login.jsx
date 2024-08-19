@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import axios from "axios";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  const URL = "";
+  const URL = "http://localhost:8000/login";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,6 +21,8 @@ const Login = () => {
 
       setEmail("");
       setPassword("");
+
+      navigate("/home");
     } catch (error) {
       console.log("error occoured will log in", error);
     }
